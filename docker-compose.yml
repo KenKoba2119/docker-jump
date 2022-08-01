@@ -1,9 +1,9 @@
 version: '3'
 services:
-  datascience-notebook:
+  jump:
     build: # build
       context: . # build context
-      dockerfile: Dockerfile # Dockerfile の指定
+      dockerfile: Dockerfile 
     ports:
       - "8888:8888"
     environment:
