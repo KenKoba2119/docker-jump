@@ -1,0 +1,13 @@
+version: '3'
+services:
+  datascience-notebook:
+    build: # build
+      context: . # build context
+      dockerfile: Dockerfile # Dockerfile の指定
+    ports:
+      - "8888:8888"
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    volumes:
+      - .:/home/jovyan
+    command: start-notebook.sh --NotebookApp.token=''
