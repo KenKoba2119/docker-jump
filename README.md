@@ -4,6 +4,20 @@ This repository aims to provide an unofficial Docker image for deployment with J
 
 ## How to Start
 
+First, clone this repository and enter its directory:
+```
+git clone https://github.com/KenKoba2119/docker-jump.git
+cd docker-jump
+```
+
+Next, execute the following command on the terminal:
+
+```sh
+docker-compose up
+```
+
+Then, access http://localhost:8888. 
+
 ## Available Solvers
 
 
